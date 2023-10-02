@@ -1,0 +1,109 @@
+
+
+<!--back-->
+<link rel="stylesheet" href="/assets/back/vendors/mdi/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="/assets/back/vendors/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="/assets/back/vendors/css/vendor.bundle.base.css">
+<!-- endinject -->
+<!-- Plugin css for this page -->
+<link rel="stylesheet" href="/assets/back/vendors/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/assets/back/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+<!-- End plugin css for this page -->
+<!-- inject:css -->
+<!-- endinject -->
+<!-- Layout styles -->
+<link rel="stylesheet" href="/assets/back/css/style.css">
+<!-- End layout styles -->
+<link rel="shortcut icon" href="/assets/back/images/favicon.png" />
+
+<div class="container-scroller">
+<app-header-admin></app-header-admin>
+  <br>
+  <br>
+  <div class="container-fluid page-body-wrapper">
+  <app-side-admin></app-side-admin>
+    <div class="main-panel">
+   <router-outlet></router-outlet>
+   
+ 
+   
+  
+
+
+
+<div class="content"></div>
+<div>
+    <h1></h1>
+</div>
+
+<div class="col-md-6 offset-md-3">
+    <div class="image-container">
+        <img src="/assets/front/img/map.jpeg" >
+    </div>
+    <h3 class="title"> </h3>
+<label for="locationInput" class="title">Enter Location Name:</label>
+    <input type="text" id="locationInput" [(ngModel)]="locationName" />
+    <button (click)="onFindNearest()" class = "button" >Find Nearest Delivery Person</button>
+    <div *ngIf="nearestDeliveryPerson">
+      Nearest Delivery Person:
+
+      <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th class="title"> Delivery Person ID</th>
+                <th class="title"> Delivery Person Name </th>
+                <th class="title"> Delivery Person Location</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+           
+                <td> {{ nearestDeliveryPerson.deliveryPersonId }} </td>
+                <td> {{ nearestDeliveryPerson.deliveryPersonName }} </td>
+                <td> {{ nearestDeliveryPerson.deliveryPersonLocation}} </td>
+               
+               
+                
+        </tbody>
+    </table>
+    
+
+
+    </div>
+    
+    
+<!---->
+<script src="/assets/back/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="/assets/back/vendors/chart.js/Chart.min.js"></script>
+<script src="/assets/back/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="/assets/back/js/off-canvas.js"></script>
+<script src="/assets/back/js/hoverable-collapse.js"></script>
+<script src="/assets/back/js/misc.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="/assets/back/js/dashboard.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

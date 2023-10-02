@@ -1,0 +1,63 @@
+
+
+<!--back-->
+<link rel="stylesheet" href="/assets/back/vendors/mdi/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="/assets/back/vendors/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="/assets/back/vendors/css/vendor.bundle.base.css">
+<!-- endinject -->
+<!-- Plugin css for this page -->
+<link rel="stylesheet" href="/assets/back/vendors/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/assets/back/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+<!-- End plugin css for this page -->
+<!-- inject:css -->
+<!-- endinject -->
+<!-- Layout styles -->
+<link rel="stylesheet" href="/assets/back/css/style.css">
+<!-- End layout styles -->
+<link rel="shortcut icon" href="/assets/back/images/favicon.png" />
+
+<div class="container-scroller">
+<app-header-admin></app-header-admin>
+  <br>
+  <br>
+  <div class="container-fluid page-body-wrapper">
+  <app-side-admin></app-side-admin>
+    <div class="main-panel">
+   <router-outlet></router-outlet>
+
+
+
+<div></div>
+<div>
+    <h1></h1>
+</div>
+
+<div>
+    <div>
+        <label class="title"> <b> Delivery Person ID: </b></label> {{deliveryPerson.deliveryPersonId}}
+    </div>
+    <div>
+        <label class="title"> <b> Delivery Person Name: </b></label> {{deliveryPerson.deliveryPersonName}}
+    </div>
+    <div>
+        <label class="title"> <b> Delivery Person Location: </b></label> {{deliveryPerson.deliveryPersonLocation}}
+    </div>
+   
+</div>
+
+<!---->
+<script src="/assets/back/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="/assets/back/vendors/chart.js/Chart.min.js"></script>
+<script src="/assets/back/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="/assets/back/js/off-canvas.js"></script>
+<script src="/assets/back/js/hoverable-collapse.js"></script>
+<script src="/assets/back/js/misc.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="/assets/back/js/dashboard.js"></script>
+
+<app-footer-admin></app-footer-admin>

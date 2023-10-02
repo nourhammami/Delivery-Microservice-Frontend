@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#6aaa77; /* Bright blue background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+  background-color: #6aaa77; /* Slightly darker blue background color on hover */
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: grey; /* You can choose a color that fits your design */
+  margin-bottom: 10px;
+  text-align: center;
+  font-style: italic;
+}
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  min-height: 100vh; /* Ensure the container covers the entire viewport height */
+  background-color: #6aaa77; /* Just for visualization */
+}
+form {
+  padding: 200px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
